@@ -1,0 +1,10 @@
+"dss-agentcore-mcp": {
+			"type": "stdio",
+			"command": "python",
+			"args": ["-m", "dss_agentcore_mcp"],
+			"env": {
+				"AGENTCORE_RUNTIME_ARN": "arn:aws:bedrock-agentcore:us-east-1:519677643490:runtime/dss_query_retrieve_agent-UO4Mf76GpU",
+				"AWS_REGION": "us-east-1",
+				"LOG_LEVEL": "INFO"
+			}
+		}

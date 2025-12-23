@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dss-agentcore-mcp"
+version = "0.1.0"
+description = "MCP Server for DICOM Store Service AgentCore Agent"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = ["mcp", "agentcore", "bedrock", "aws", "dicom"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+dependencies = [
+    "mcp>=1.1.0",
+    "boto3>=1.42.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/dss-agentcore-mcp"
+Repository = "https://github.com/yourusername/dss-agentcore-mcp"
+Issues = "https://github.com/yourusername/dss-agentcore-mcp/issues"
+
+[tool.setuptools]
+packages = ["dss_agentcore_mcp"]
+
+[tool.setuptools.package-data]
+dss_agentcore_mcp = ["py.typed"]
